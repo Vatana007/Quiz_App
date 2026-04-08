@@ -10,15 +10,15 @@ from google import genai
 from google.genai import types
 
 # ==========================================
-# 🔑 ដាក់ API KEY របស់អ្នកនៅទីនេះ (HARDCODED)
+# 🔑 ដាក់ API KEY របស់អ្នកនៅទីនេះ
 # ==========================================
-MY_API_KEY = "AIzaSyDqUQavf5zluDEVN-M2-3iJwdIvsefp6cg"
+MY_API_KEY = "ដាក់_API_KEY_របស់អ្នកនៅទីនេះ"
 
-# --- 1. System Setup ---
+# --- System Setup ---
 if not os.path.exists("quizzes"):
     os.makedirs("quizzes")
 
-# --- 2. MODERN ENTERPRISE UI TEMPLATE ---
+# --- MODERN ENTERPRISE UI TEMPLATE ---
 st.set_page_config(page_title="ProQuiz AI", page_icon="⚡", layout="centered")
 
 st.markdown("""
@@ -26,25 +26,36 @@ st.markdown("""
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Battambang:wght@400;700&display=swap');
     html, body, [class*="css"]  { font-family: 'Inter', 'Battambang', sans-serif; color: #1e293b; }
     .block-container { padding-top: 2rem; max-width: 750px; }
+    
     .stButton>button { 
         width: 100%; border-radius: 6px; font-weight: 600; font-size: 15px;
         background-color: #0f172a; color: white; border: 1px solid #0f172a;
         padding: 0.6rem; transition: all 0.2s ease-in-out;
     }
-    ._profileContainer_gzau3_53, ._container_gzau3_1 { display: none !important; }
     .stButton>button:hover { background-color: #334155; border-color: #334155; color: white; }
+    
     .result-card { padding: 16px 20px; border-radius: 8px; margin-bottom: 16px; border: 1px solid #e2e8f0; background-color: #ffffff; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
     .correct-card { border-left: 4px solid #10b981; }
     .wrong-card { border-left: 4px solid #ef4444; }
+    
     div.row-widget.stRadio > div{ background-color: #f8fafc; padding: 12px 16px; border-radius: 8px; border: 1px solid #cbd5e1; }
+    
     .app-header { text-align: center; padding-bottom: 20px; border-bottom: 1px solid #e2e8f0; margin-bottom: 30px; }
     .app-title { font-weight: 700; font-size: 28px; color: #0f172a; margin-bottom: 5px; }
     .app-subtitle { color: #64748b; font-size: 15px; }
+
+    /* --- លាក់ប៊ូតុង Streamlit Default Watermarks --- */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    .viewerBadge_container__1QSob {display: none !important;}
+    [data-testid="stDecoration"] { display: none; }
     </style>
 """, unsafe_allow_html=True)
 
-# --- 3. CORE FUNCTIONS (OPTIMIZED WITH CACHING) ---
-# ប្រើប្រាស់ Cache ដើម្បីកុំឲ្យអានឯកសារដដែលៗនាំឲ្យយូរ
+# --- CORE FUNCTIONS ---
+
+# ប្រើប្រាស់ Cache សម្រាប់តែការអានឯកសារ ដើម្បីសន្សំសំចៃពេល
 @st.cache_data(show_spinner=False)
 def extract_text_from_upload(file_name, file_bytes, ext):
     text = ""
@@ -61,13 +72,18 @@ def extract_text_from_upload(file_name, file_bytes, ext):
             import io
             doc = docx.Document(io.BytesIO(file_bytes))
             for para in doc.paragraphs: text += para.text + "\n"
+        elif ext == 'pptx':
+            import io
+            prs = pptx.Presentation(io.BytesIO(file_bytes))
+            for slide in prs.slides:
+                for shape in slide.shapes:
+                    if hasattr(shape, "text"):
+                        text += shape.text + "\n"
     except Exception as e:
         return f"Error: {e}"
     return text.strip()
 
-# ប្រើប្រាស់ Cache ដើម្បីកុំឲ្យ AI បង្កើតសំណួរដដែលៗនាំឲ្យយូរ
-@st.cache_data(show_spinner=False)
-# ដក Cache ចេញ ដើម្បីអនុញ្ញាតឲ្យ AI បង្កើតសំណួរថ្មីជានិច្ចពេលចុចម្តងៗ
+# មិនដាក់ Cache ទេ ដើម្បីឲ្យ AI បង្កើតសំណួរថ្មីប្លែកៗជានិច្ចពេលចុចម្តងៗ
 def generate_quiz(text, num_questions, target_language):
     client = genai.Client(api_key=MY_API_KEY)
     
@@ -104,7 +120,7 @@ def generate_quiz(text, num_questions, target_language):
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json",
-                    temperature=0.9  # បន្ថែមចំណុចនេះ! ធ្វើឲ្យ AI កាន់តែមានភាពច្នៃប្រឌិត (Random ខ្ពស់)
+                    temperature=0.9 # បង្កើនភាពច្នៃប្រឌិតឲ្យចេញសំណួរថ្មី
                 )
             )
             return json.loads(response.text)
@@ -112,16 +128,16 @@ def generate_quiz(text, num_questions, target_language):
             error_msg = str(e)
             if "503" in error_msg or "UNAVAILABLE" in error_msg:
                 if attempt < max_retries - 1:
-                    time.sleep(3)
+                    time.sleep(4) # រង់ចាំ ៤ វិនាទី បើ Server កកស្ទះ
                     continue
             raise Exception(f"API Error: {error_msg}")
 
-# --- 4. ROUTING ---
+# --- ROUTING LOGIC ---
 query_params = st.query_params
 quiz_id = query_params.get("quiz_id")
 
 # ==========================================
-# STUDENT EXAM VIEW
+# ផ្ទាំងសិស្ស (STUDENT EXAM VIEW)
 # ==========================================
 if quiz_id:
     quiz_file_path = f"quizzes/{quiz_id}.json"
@@ -133,6 +149,7 @@ if quiz_id:
         quiz_data = saved_data["data"]
         quiz_lang = saved_data["language"]
         
+        # វចនានុក្រមប្រែភាសាស្វ័យប្រវត្តិសម្រាប់ UI
         ui = {
             "Khmer": {"title": "📝 ការប្រឡងសាកល្បង", "subtitle": "សូមជ្រើសរើសចម្លើយដែលត្រឹមត្រូវបំផុតសម្រាប់សំណួរនីមួយៗ", "submit": "បញ្ជូនចម្លើយ (Submit Assessment)", "result_title": "📊 លទ្ធផលរបស់អ្នក", "q": "សំណួរទី", "not_answered": "មិនបានឆ្លើយ", "correct_is": "ចម្លើយត្រូវគឺ", "correct": "ត្រឹមត្រូវ", "you_chose": "អ្នកជ្រើសរើស", "wrong": "ខុសហើយ", "your_choice": "ជម្រើសរបស់អ្នក", "passed": "ជាប់ (Passed)", "failed": "ធ្លាក់ (Failed)"},
             "English": {"title": "📝 Student Assessment", "subtitle": "Please select the best answer for each question.", "submit": "Submit Assessment", "result_title": "📊 Your Results", "q": "Question", "not_answered": "Not Answered", "correct_is": "Correct answer is", "correct": "Correct", "you_chose": "You chose", "wrong": "Incorrect", "your_choice": "Your choice", "passed": "Passed", "failed": "Failed"}
@@ -183,7 +200,7 @@ if quiz_id:
         st.warning("⚠️ Quiz not found. The link may be invalid or expired.")
 
 # ==========================================
-# TEACHER / ADMIN VIEW
+# ផ្ទាំងគ្រូ (TEACHER / ADMIN VIEW)
 # ==========================================
 else:
     st.markdown("""
@@ -200,7 +217,7 @@ else:
         st.markdown("---")
 
     st.markdown("#### 📄 Upload Source Material")
-    uploaded_file = st.file_uploader("", type=['pdf', 'docx', 'txt'], label_visibility="collapsed")
+    uploaded_file = st.file_uploader("", type=['pdf', 'docx', 'pptx', 'txt'], label_visibility="collapsed")
 
     if uploaded_file:
         st.info(f"File attached: **{uploaded_file.name}**")
@@ -209,7 +226,7 @@ else:
             if MY_API_KEY == "ដាក់_API_KEY_របស់អ្នកនៅទីនេះ":
                 st.error("⚠️ សូមដូរពាក្យ 'ដាក់_API_KEY_របស់អ្នកនៅទីនេះ' នៅបន្ទាត់ទី ១៥ ទៅជា API Key របស់អ្នកពិតប្រាកដសិន។")
             else:
-                with st.spinner("Analyzing document and generating questions... (វាអាចលឿនជាងមុនប្រសិនបើឯកសារនេះធ្លាប់ Upload ម្តងហើយ)"):
+                with st.spinner("Analyzing document and generating questions..."):
                     # Extract Data (Cached)
                     file_bytes = uploaded_file.getvalue()
                     ext = uploaded_file.name.split('.')[-1].lower()
@@ -217,7 +234,7 @@ else:
                     
                     if document_text and not document_text.startswith("Error:"):
                         try:
-                            # Generate Quiz (Cached)
+                            # Generate Quiz (Not Cached - New questions every time)
                             quiz_data = generate_quiz(document_text, num_q, selected_language)
                             unique_id = str(uuid.uuid4())
                             
@@ -225,6 +242,7 @@ else:
                             with open(f"quizzes/{unique_id}.json", "w", encoding="utf-8") as f:
                                 json.dump(save_payload, f, ensure_ascii=False, indent=4)
                             
+                            # យក URL ជាក់ស្តែងរបស់កុំព្យូទ័រ/Server ដើម្បីងាយស្រួល Copy
                             base_url = "http://localhost:8501" 
                             shareable_link = f"{base_url}/?quiz_id={unique_id}"
                             

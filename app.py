@@ -45,11 +45,10 @@ st.markdown("""
     .app-subtitle { color: #64748b; font-size: 15px; }
 
     /* --- លាក់ប៊ូតុង Streamlit Default Watermarks --- */
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    header {visibility: hidden;}
-    .viewerBadge_container__1QSob {display: none !important;}
     [data-testid="stDecoration"] { display: none; }
+    [data-testid="stToolbar"] { display: none; }
+    [data-testid="manage-app-button"] { display: none !important; }
+    div[class^="st-emotion-cache-"] > button { display: none !important; }
     </style>
 """, unsafe_allow_html=True)
 

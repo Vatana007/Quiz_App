@@ -31,7 +31,7 @@ st.markdown("""
         background-color: #0f172a; color: white; border: 1px solid #0f172a;
         padding: 0.6rem; transition: all 0.2s ease-in-out;
     }
-    ._profileContainer_gzau3_53, ._container_gzau3_1 _viewerBadge_nim44_23 { display: none !important; }
+    ._profileContainer_gzau3_53, ._container_gzau3_1 { display: none !important; }
     .stButton>button:hover { background-color: #334155; border-color: #334155; color: white; }
     .result-card { padding: 16px 20px; border-radius: 8px; margin-bottom: 16px; border: 1px solid #e2e8f0; background-color: #ffffff; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
     .correct-card { border-left: 4px solid #10b981; }

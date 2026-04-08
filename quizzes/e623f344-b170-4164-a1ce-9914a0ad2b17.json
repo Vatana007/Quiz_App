@@ -1,0 +1,57 @@
+{
+    "language": "Khmer",
+    "data": {
+        "questions": [
+            {
+                "question": "តើមួយណាជាប្រភេទកម្មវិធី (Programming Software) ក្នុងចំណោមជម្រើសខាងក្រោម?",
+                "options": [
+                    "A) ប្រព័ន្ធប្រតិបត្តិការ (Operating Systems)",
+                    "B) កម្មវិធីកែរូបភាព (Image editing software)",
+                    "C) កម្មវិធីបកប្រែកូដ (Compilers)",
+                    "D) កម្មវិធីពាណិជ្ជកម្ម (Business software)"
+                ],
+                "correct_answer": "C) កម្មវិធីបកប្រែកូដ (Compilers)"
+            },
+            {
+                "question": "តើមួយណាជាច្បាប់ត្រឹមត្រូវសម្រាប់ការដាក់ឈ្មោះ Identifiers ក្នុង C programming?",
+                "options": [
+                    "A) Identifiers អាចចាប់ផ្តើមដោយលេខ។",
+                    "B) Identifiers មិនអាចមានតួអក្សរពិសេសដូចជា semicolon ឬ space ទេ។",
+                    "C) Keywords ត្រូវបានអនុញ្ញាតឱ្យប្រើជា Identifiers ។",
+                    "D) C compiler ស្គាល់ត្រឹមតែ 10 តួអក្សរដំបូងនៃ Identifiers ប៉ុណ្ណោះ។"
+                ],
+                "correct_answer": "B) Identifiers មិនអាចមានតួអក្សរពិសេសដូចជា semicolon ឬ space ទេ។"
+            },
+            {
+                "question": "តើលក្ខណៈពិសេសមួយណាដែលពិពណ៌នាអំពី do-while loop បានត្រឹមត្រូវ?",
+                "options": [
+                    "A) វាជា entry-controlled loop។",
+                    "B) លក្ខខណ្ឌត្រូវបានវាយតម្លៃមុនពេល body នៃ loop ត្រូវបានប្រតិបត្តិ។",
+                    "C) body នៃ loop នឹងត្រូវបានប្រតិបត្តិយ៉ាងហោចណាស់ម្តង។",
+                    "D) វាត្រូវបានប្រើនៅពេលដែលចំនួនដងនៃការប្រតិបត្តិ loop ត្រូវបានគេដឹងជាមុន។"
+                ],
+                "correct_answer": "C) body នៃ loop នឹងត្រូវបានប្រតិបត្តិយ៉ាងហោចណាស់ម្តង។"
+            },
+            {
+                "question": "តើអ្វីជាភាពខុសគ្នាសំខាន់រវាង Call by Value និង Call by Reference ក្នុងការបញ្ជូន parameters ទៅកាន់ function?",
+                "options": [
+                    "A) Call by Value ប្រើ address របស់ variables ចំណែក Call by Reference ប្រើ value របស់ variables។",
+                    "B) ក្នុង Call by Value តម្លៃដើមនៃ actual parameters មិនត្រូវបានផ្លាស់ប្តូរទេ បើទោះជា formal parameters ផ្លាស់ប្តូរក៏ដោយ។",
+                    "C) ក្នុង Call by Reference តម្លៃដើមនៃ actual parameters មិនអាចផ្លាស់ប្តូរបានទេ។",
+                    "D) Call by Value មានល្បឿនប្រតិបត្តិលឿនជាង Call by Reference ។"
+                ],
+                "correct_answer": "B) ក្នុង Call by Value តម្លៃដើមនៃ actual parameters មិនត្រូវបានផ្លាស់ប្តូរទេ បើទោះជា formal parameters ផ្លាស់ប្តូរក៏ដោយ។"
+            },
+            {
+                "question": "តើមួយណាជាភាពខុសគ្នាត្រឹមត្រូវរវាង Structure និង Union ក្នុង C programming?",
+                "options": [
+                    "A) Structure រក្សាទុក data ប្រភេទដូចគ្នា ចំណែក Union រក្សាទុក data ប្រភេទផ្សេងគ្នា។",
+                    "B) Structure កាន់កាប់ memory space ច្រើនជាង Union ។",
+                    "C) ក្នុង Structure យើងអាចចូលប្រើ members តែមួយមុខគត់ក្នុងពេលតែមួយ។",
+                    "D) Union បែងចែក storage space ដាច់ដោយឡែកសម្រាប់ members នីមួយៗ។"
+                ],
+                "correct_answer": "B) Structure កាន់កាប់ memory space ច្រើនជាង Union ។"
+            }
+        ]
+    }
+}

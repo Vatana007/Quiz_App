@@ -1,0 +1,107 @@
+{
+    "language": "Khmer",
+    "data": {
+        "questions": [
+            {
+                "question": "តើអ្នកណាត្រូវបានគេស្គាល់ថាជាស្ថាបនិកនៃភាសាស៊ី (C) ?",
+                "options": [
+                    "A) Martin Richards",
+                    "B) Ken Thompson",
+                    "C) Dennis Ritchie",
+                    "D) Charles Babbage"
+                ],
+                "correct_answer": "C) Dennis Ritchie"
+            },
+            {
+                "question": "តើច្បាប់មួយណាដែលមិនត្រឹមត្រូវសម្រាប់កំណត់ឈ្មោះ Identifiers នៅក្នុងភាសាស៊ី?",
+                "options": [
+                    "A) Identifiers អាចមានតួអក្សរលេខ (alphanumeric) និងសញ្ញាគូសក្រោម (underscore) ប៉ុណ្ណោះ។",
+                    "B) តួអក្សរដំបូងរបស់ identifier អាចជាអក្សរ ឬសញ្ញាគូសក្រោម។",
+                    "C) Keywords ត្រូវបានអនុញ្ញាតឱ្យប្រើជា Identifiers។",
+                    "D) Identifiers នៅក្នុងភាសាស៊ីគឺ case sensitive។"
+                ],
+                "correct_answer": "C) Keywords ត្រូវបានអនុញ្ញាតឱ្យប្រើជា Identifiers។"
+            },
+            {
+                "question": "តើលទ្ធផលនៃប្រតិបត្តិករ Bitwise Complement (~) នៃលេខចំនួនគត់ N ក្នុងភាសាស៊ី គឺស្មើនឹងប៉ុន្មាន?",
+                "options": [
+                    "A) N+1",
+                    "B) N-1",
+                    "C) -(N+1)",
+                    "D) -N"
+                ],
+                "correct_answer": "C) -(N+1)"
+            },
+            {
+                "question": "តើពាក្យបញ្ជា preprocessor #error ធ្វើអ្វីនៅក្នុងភាសាស៊ី?",
+                "options": [
+                    "A) វាប្រើដើម្បីកំណត់ macro។",
+                    "B) វាធ្វើឱ្យ compiler បញ្ចេញ fatal error និងរំលងការ compile បន្ថែម។",
+                    "C) វាបញ្ចូល code ពី file ផ្សេងទៀត។",
+                    "D) វាបិទការព្រមានរបស់ compiler។"
+                ],
+                "correct_answer": "B) វាធ្វើឱ្យ compiler បញ្ចេញ fatal error និងរំលងការ compile បន្ថែម។"
+            },
+            {
+                "question": "តើអ្វីជាភាពខុសគ្នាដ៏សំខាន់មួយរវាងអនុគមន៍ malloc() និង calloc() សម្រាប់ការបែងចែក memory ក្នុងភាសាស៊ី?",
+                "options": [
+                    "A) malloc() បែងចែក memory ច្រើន block រីឯ calloc() បែងចែក memory តែមួយ block។",
+                    "B) malloc() កំណត់តម្លៃដំបូងដល់ memory ដែលបានបែងចែកទៅជាសូន្យ រីឯ calloc() មិនកំណត់តម្លៃទេ។",
+                    "C) malloc() ទទួលអាគុយម៉ង់តែមួយ រីឯ calloc() ទទួលអាគុយម៉ង់ពីរ។",
+                    "D) malloc() ត្រូវបានប្រើសម្រាប់ arrays រីឯ calloc() ត្រូវបានប្រើសម្រាប់ structures។"
+                ],
+                "correct_answer": "C) malloc() ទទួលអាគុយម៉ង់តែមួយ រីឯ calloc() ទទួលអាគុយម៉ង់ពីរ។"
+            },
+            {
+                "question": "តើលក្ខណៈសម្បត្តិមួយណាដែលបញ្ជាក់ថាជំហាននីមួយៗក្នុង Algorithm គឺច្បាស់លាស់ (unambiguous) ហើយអាចអនុវត្តបានដោយគ្មានការភាន់ច្រឡំ?",
+                "options": [
+                    "A) Finiteness (ភាពកំណត់)",
+                    "B) Definiteness (ភាពច្បាស់លាស់)",
+                    "C) Input (ការបញ្ចូល)",
+                    "D) Effectiveness (ប្រសិទ្ធភាព)"
+                ],
+                "correct_answer": "B) Definiteness (ភាពច្បាស់លាស់)"
+            },
+            {
+                "question": "តើអ្វីជាតម្លៃលំនាំដើម (default value) របស់អថេរដែលបានប្រកាសជា 'static' storage class ក្នុងភាសាស៊ី?",
+                "options": [
+                    "A) តម្លៃសំរាម (Garbage value)",
+                    "B) សូន្យ (Zero)",
+                    "C) មួយ (One)",
+                    "D) គ្មានតម្លៃលំនាំដើម (No default value)"
+                ],
+                "correct_answer": "B) សូន្យ (Zero)"
+            },
+            {
+                "question": "តើរបៀបបើក file (mode) មួយណាដែលនឹងលុបទិន្នន័យដែលមានស្រាប់នៅក្នុង file ចោល ប្រសិនបើ file នោះត្រូវបានបើក?",
+                "options": [
+                    "A) \"r\" (អាន)",
+                    "B) \"a\" (បន្ថែម)",
+                    "C) \"w\" (សរសេរ)",
+                    "D) \"rb\" (អាន binary)"
+                ],
+                "correct_answer": "C) \"w\" (សរសេរ)"
+            },
+            {
+                "question": "តើប្រភេទទិន្នន័យដែលអ្នកប្រើកំណត់ (user-defined data type) មួយណាដែលអនុញ្ញាតឱ្យ members ទាំងអស់ចែករំលែកទីតាំង memory តែមួយ ដែលមានទំហំស្មើនឹង member ដែលធំជាងគេបំផុត?",
+                "options": [
+                    "A) Structure (រចនាសម្ព័ន្ធ)",
+                    "B) Array (អារេ)",
+                    "C) Union (សហជីព)",
+                    "D) Enum (ការរាប់)"
+                ],
+                "correct_answer": "C) Union (សហជីព)"
+            },
+            {
+                "question": "តើអនុគមន៍ `main()` ត្រូវការអាគុយម៉ង់ប៉ុន្មានដើម្បីគាំទ្រ command-line arguments ក្នុងភាសាស៊ី?",
+                "options": [
+                    "A) គ្មាន (None)",
+                    "B) មួយ (One)",
+                    "C) ពីរ (Two)",
+                    "D) បី (Three)"
+                ],
+                "correct_answer": "C) ពីរ (Two)"
+            }
+        ]
+    }
+}

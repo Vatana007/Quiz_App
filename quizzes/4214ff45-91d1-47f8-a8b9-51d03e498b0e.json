@@ -1,0 +1,57 @@
+{
+    "language": "Khmer",
+    "data": {
+        "questions": [
+            {
+                "question": "តើកុំព្យូទ័រគឺជាអ្វី?",
+                "options": [
+                    "A) ឧបករណ៍អេឡិចត្រូនិកដែលទទួលទិន្នន័យជា Input, រក្សាទុកទិន្នន័យ, ដំណើរការទិន្នន័យ និងបង្កើតលទ្ធផលជា Output។",
+                    "B) ឧបករណ៍មេកានិចដែលគ្រាន់តែបង្ហាញលទ្ធផល។",
+                    "C) កម្មវិធីសម្រាប់វាយបញ្ចូលអត្ថបទតែប៉ុណ្ណោះ។",
+                    "D) បណ្តុំនៃខ្សែភ្លើង និងបន្ទះឈីបដែលមិនអាចធ្វើអ្វីបាន។"
+                ],
+                "correct_answer": "A) ឧបករណ៍អេឡិចត្រូនិកដែលទទួលទិន្នន័យជា Input, រក្សាទុកទិន្នន័យ, ដំណើរការទិន្នន័យ និងបង្កើតលទ្ធផលជា Output។"
+            },
+            {
+                "question": "តើ Software កុំព្យូទ័រមានប៉ុន្មានប្រភេទសំខាន់ៗ?",
+                "options": [
+                    "A) System Software, Application Software, Utility Software។",
+                    "B) Gaming Software, Editing Software, Browser Software។",
+                    "C) System Software, Programming Software, Application Software។",
+                    "D) Document Software, Spreadsheet Software, Presentation Software។"
+                ],
+                "correct_answer": "C) System Software, Programming Software, Application Software។"
+            },
+            {
+                "question": "តើអ្នកណាជាអ្នកបង្កើតភាសាសរសេរកម្មវិធី C?",
+                "options": [
+                    "A) Bill Gates",
+                    "B) Steve Jobs",
+                    "C) Dennis Ritchie",
+                    "D) Mark Zuckerberg"
+                ],
+                "correct_answer": "C) Dennis Ritchie"
+            },
+            {
+                "question": "តើ Array គឺជាអ្វី?",
+                "options": [
+                    "A) បណ្តុំនៃទិន្នន័យដែលរក្សាទុកតម្លៃជាច្រើនប្រភេទ។",
+                    "B) បណ្តុំនៃទិន្នន័យដែលរក្សាទុកចំនួនថេរនៃតម្លៃប្រភេទដូចគ្នា។",
+                    "C) អថេរដែលអាចរក្សាទុកតម្លៃតែមួយគត់។",
+                    "D) មុខងារសម្រាប់ធ្វើការគណនាគណិតវិទ្យា។"
+                ],
+                "correct_answer": "B) បណ្តុំនៃទិន្នន័យដែលរក្សាទុកចំនួនថេរនៃតម្លៃប្រភេទដូចគ្នា។"
+            },
+            {
+                "question": "តើ Pointer នៅក្នុងភាសា C គឺជាអ្វី?",
+                "options": [
+                    "A) អថេរដែលរក្សាទុកតម្លៃជាលេខថេរ។",
+                    "B) អថេរដែលរក្សាទុកអាសយដ្ឋានរបស់អថេរផ្សេងទៀតដែលមានប្រភេទទិន្នន័យដូចគ្នា។",
+                    "C) មុខងារសម្រាប់បោះពុម្ពអត្ថបទនៅលើអេក្រង់។",
+                    "D) ប្រតិបត្តិករដែលប្រើសម្រាប់ធ្វើការប្រៀបធៀប។"
+                ],
+                "correct_answer": "B) អថេរដែលរក្សាទុកអាសយដ្ឋានរបស់អថេរផ្សេងទៀតដែលមានប្រភេទទិន្នន័យដូចគ្នា។"
+            }
+        ]
+    }
+}

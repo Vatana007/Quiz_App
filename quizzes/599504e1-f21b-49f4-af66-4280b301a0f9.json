@@ -1,0 +1,54 @@
+{
+    "questions": [
+        {
+            "question": "What is the primary function of a Route in Laravel according to the text?",
+            "options": [
+                "A) Connecting a URL request to a Controller using an HTTP method.",
+                "B) Displaying the User Interface (UI) to the user.",
+                "C) Storing data received from the Controller.",
+                "D) Defining the file location for imported files."
+            ],
+            "correct_answer": "A) Connecting a URL request to a Controller using an HTTP method."
+        },
+        {
+            "question": "Which of the following is explicitly listed as an HTTP method in the provided content?",
+            "options": [
+                "A) FETCH",
+                "B) UPLOAD",
+                "C) CONNECT",
+                "D) DOWNLOAD"
+            ],
+            "correct_answer": "C) CONNECT"
+        },
+        {
+            "question": "According to the text, what is the purpose of a Namespace?",
+            "options": [
+                "A) To coordinate between routes, views, and models.",
+                "B) To define the file location for processes that are imported and called.",
+                "C) To prepare the UI for displaying data to the user.",
+                "D) To handle database operations and data storage."
+            ],
+            "correct_answer": "B) To define the file location for processes that are imported and called."
+        },
+        {
+            "question": "What is the main responsibility of a View in Laravel, as described in the content?",
+            "options": [
+                "A) Preparing the User Interface (UI) to display data received from the Controller to the user.",
+                "B) Intercepting HTTP requests and directing them to the appropriate Controller.",
+                "C) Serving as a class that mediates between routes and other application parts.",
+                "D) Generating and solving various problems like pulling and processing data."
+            ],
+            "correct_answer": "A) Preparing the User Interface (UI) to display data received from the Controller to the user."
+        },
+        {
+            "question": "How is a Controller defined and what is its role in Laravel?",
+            "options": [
+                "A) It is a file location for imported processes.",
+                "B) It is a class that coordinates between the route, view, model, and other parts of the Laravel application.",
+                "C) It is a part that prepares the UI to display data to the user.",
+                "D) It is a connection between a URL and a user request."
+            ],
+            "correct_answer": "B) It is a class that coordinates between the route, view, model, and other parts of the Laravel application."
+        }
+    ]
+}

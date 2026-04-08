@@ -1,0 +1,54 @@
+{
+    "questions": [
+        {
+            "question": "According to the text, what is the primary function of a computer?",
+            "options": [
+                "A) To only accept data as input.",
+                "B) To primarily display results to humans.",
+                "C) To perform operations such as accepting, storing, manipulating data, and producing output.",
+                "D) To only store data and instructions."
+            ],
+            "correct_answer": "C) To perform operations such as accepting, storing, manipulating data, and producing output."
+        },
+        {
+            "question": "What are the three main types of computer software mentioned in the text?",
+            "options": [
+                "A) System Software, Utility Software, and Programming Software",
+                "B) Application Software, Operating Systems, and Device Drivers",
+                "C) System Software, Programming Software, and Application Software",
+                "D) Servers, Compilers, and Databases"
+            ],
+            "correct_answer": "C) System Software, Programming Software, and Application Software"
+        },
+        {
+            "question": "Which of the following best describes \"Low Level Languages\" as per the provided content?",
+            "options": [
+                "A) Languages that are close to English and use mathematical symbols.",
+                "B) Machine codes or languages very close to machine code, understandable by the computer directly.",
+                "C) Languages that provide tools to assist programmers in writing computer programs.",
+                "D) Languages oriented towards computational procedures for solving mathematical problems."
+            ],
+            "correct_answer": "B) Machine codes or languages very close to machine code, understandable by the computer directly."
+        },
+        {
+            "question": "What are the four essential steps involved in creating and running a C program, in the correct order, according to the document?",
+            "options": [
+                "A) Linking, Compiling, Writing, Executing",
+                "B) Writing and editing, Compiling, Linking, Executing",
+                "C) Writing and editing, Executing, Compiling, Linking",
+                "D) Compiling, Linking, Writing and editing, Executing"
+            ],
+            "correct_answer": "B) Writing and editing, Compiling, Linking, Executing"
+        },
+        {
+            "question": "What are \"C TOKENS\" as defined in the C Programming content?",
+            "options": [
+                "A) Reserved words that have fixed meanings.",
+                "B) User-defined names for variables, constants, functions, and arrays.",
+                "C) The smallest individual units in a C program.",
+                "D) Fixed values that do not change during program execution."
+            ],
+            "correct_answer": "C) The smallest individual units in a C program."
+        }
+    ]
+}

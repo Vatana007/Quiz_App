@@ -1,0 +1,54 @@
+{
+    "questions": [
+        {
+            "question": "Which of the following is explicitly listed as a 'Programming Software' tool in the provided content?",
+            "options": [
+                "A) Device drivers",
+                "B) Operating systems",
+                "C) Compilers",
+                "D) Business software"
+            ],
+            "correct_answer": "C"
+        },
+        {
+            "question": "After a C program's source code is successfully compiled, what is the extension of the file where the object program is saved?",
+            "options": [
+                "A) .exe",
+                "B) .c",
+                "C) .obj",
+                "D) .bak"
+            ],
+            "correct_answer": "C"
+        },
+        {
+            "question": "According to the 'C TOKENS' section, which of the following is a true characteristic of C keywords?",
+            "options": [
+                "A) They can be used as identifiers if written in uppercase.",
+                "B) They can include special characters like '$'.",
+                "C) They have fixed meanings that cannot be changed.",
+                "D) There are unlimited keywords in C language."
+            ],
+            "correct_answer": "C"
+        },
+        {
+            "question": "On which of the following can the increment operator (++) NOT be used, according to the 'Increment and Decrement Operators' section?",
+            "options": [
+                "A) A variable",
+                "B) A pointer",
+                "C) A constant value",
+                "D) A float variable"
+            ],
+            "correct_answer": "C"
+        },
+        {
+            "question": "When parameters are passed 'by value' to a function in C, what happens to the original actual parameters if the formal parameters are modified inside the called function?",
+            "options": [
+                "A) The original actual parameters are also changed.",
+                "B) The original actual parameters remain unchanged.",
+                "C) The compiler issues a warning, but changes are reflected.",
+                "D) The program enters an infinite loop."
+            ],
+            "correct_answer": "B"
+        }
+    ]
+}

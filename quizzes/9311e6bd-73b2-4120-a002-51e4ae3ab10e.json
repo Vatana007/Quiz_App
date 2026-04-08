@@ -1,0 +1,54 @@
+{
+    "questions": [
+        {
+            "question": "Which of the following is NOT listed as a main task performed by a computer according to the provided text?",
+            "options": [
+                "A) Accept the data",
+                "B) Process or manipulate the data",
+                "C) Display or store the result in the form of human understanding",
+                "D) Generating random numbers"
+            ],
+            "correct_answer": "D) Generating random numbers"
+        },
+        {
+            "question": "According to the text, which of the following is NOT one of the three main types of computer software?",
+            "options": [
+                "A) System Software",
+                "B) Programming Software",
+                "C) Application Software",
+                "D) Network Software"
+            ],
+            "correct_answer": "D) Network Software"
+        },
+        {
+            "question": "Which of the following is a valid rule for an identifier in C programming according to the text?",
+            "options": [
+                "A) Identifiers can start with a number.",
+                "B) Keywords can be used as identifiers.",
+                "C) Identifiers are case-sensitive.",
+                "D) Special characters like \"$\" are permitted in identifiers."
+            ],
+            "correct_answer": "C) Identifiers are case-sensitive."
+        },
+        {
+            "question": "What is the primary purpose of the `sizeof()` operator in C, as described in the text?",
+            "options": [
+                "A) To allocate memory dynamically.",
+                "B) To compare the size of two variables.",
+                "C) To return the length in bytes of the specified variable.",
+                "D) To perform arithmetic operations on pointer variables."
+            ],
+            "correct_answer": "C) To return the length in bytes of the specified variable."
+        },
+        {
+            "question": "What is a key characteristic of a `union` in C programming regarding memory allocation, as described in the text?",
+            "options": [
+                "A) Each member of a union has its own separate storage location.",
+                "B) All members of a union share a single memory location equal to the size of its largest member.",
+                "C) Unions are primarily used for dynamic memory allocation.",
+                "D) All members of a union can be accessed simultaneously."
+            ],
+            "correct_answer": "B) All members of a union share a single memory location equal to the size of its largest member."
+        }
+    ]
+}

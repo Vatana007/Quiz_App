@@ -1,0 +1,57 @@
+{
+    "language": "English",
+    "data": {
+        "questions": [
+            {
+                "question": "In a Time-Sharing Environment, what is the primary role of the central computer regarding resources?",
+                "options": [
+                    "A) It solely provides individual users with personal computation devices.",
+                    "B) It manages all shared resources, shared data, and printing for many connected users.",
+                    "C) Its main function is to seamlessly integrate computing functions between different servers globally.",
+                    "D) It only stores data, with all processing handled by individual user workstations."
+                ],
+                "correct_answer": "B) It manages all shared resources, shared data, and printing for many connected users."
+            },
+            {
+                "question": "What unique feature of Assembly Language led to its alternative name 'Symbolic Programming Language'?",
+                "options": [
+                    "A) Its ability to directly execute instructions in binary digits (0s and 1s).",
+                    "B) Its use of English-like words and mathematical symbols in a one-to-many translation.",
+                    "C) Its representation of operation codes and operands using alphanumeric mnemonic codes.",
+                    "D) Its inherent portability across different types of computer hardware."
+                ],
+                "correct_answer": "C) Its representation of operation codes and operands using alphanumeric mnemonic codes."
+            },
+            {
+                "question": "Which C operator is described as a unary operator that returns the length in bytes of the specified variable?",
+                "options": [
+                    "A) The comma operator (,)",
+                    "B) The logical NOT operator (!)",
+                    "C) The sizeof() operator",
+                    "D) The bitwise AND operator (&)"
+                ],
+                "correct_answer": "C) The sizeof() operator"
+            },
+            {
+                "question": "Which C storage class has a default initial value of zero and its life persists between different function calls, despite being local in scope?",
+                "options": [
+                    "A) auto",
+                    "B) register",
+                    "C) static",
+                    "D) extern"
+                ],
+                "correct_answer": "C) static"
+            },
+            {
+                "question": "What is the primary difference in memory allocation between a struct and a union in C?",
+                "options": [
+                    "A) struct allocates memory at runtime, while union allocates at compile time.",
+                    "B) All members of a struct share a single memory location, while union members each have their own.",
+                    "C) struct members each have their own storage location, while all members of a union use a single shared memory location.",
+                    "D) union can only store homogeneous data types, whereas struct can store heterogeneous types."
+                ],
+                "correct_answer": "C) struct members each have their own storage location, while all members of a union use a single shared memory location."
+            }
+        ]
+    }
+}

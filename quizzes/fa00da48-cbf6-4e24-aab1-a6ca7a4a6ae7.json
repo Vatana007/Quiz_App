@@ -1,0 +1,107 @@
+{
+    "language": "English",
+    "data": {
+        "questions": [
+            {
+                "question": "In Assembly Language, what specific term is used for the alphanumeric symbols that replace binary 0s and 1s for operation codes and operands?",
+                "options": [
+                    "A) OpCodes",
+                    "B) Mnemonics",
+                    "C) Assemblers",
+                    "D) Registers"
+                ],
+                "correct_answer": "B) Mnemonics"
+            },
+            {
+                "question": "If the initialization part of a `for` loop is skipped in C, what syntax element is still mandatory before the condition to avoid a compilation error?",
+                "options": [
+                    "A) A comma (,)",
+                    "B) A semicolon (;)",
+                    "C) An opening brace ({)",
+                    "D) A space character ( )"
+                ],
+                "correct_answer": "B) A semicolon (;)"
+            },
+            {
+                "question": "What operation is explicitly stated as not possible with a variable declared with the `register` storage class in C?",
+                "options": [
+                    "A) Incrementing its value",
+                    "B) Getting its memory address",
+                    "C) Assigning it a default value",
+                    "D) Using it in an arithmetic expression"
+                ],
+                "correct_answer": "B) Getting its memory address"
+            },
+            {
+                "question": "What is the default initial value of memory allocated by the `malloc()` function in C?",
+                "options": [
+                    "A) Zero (0)",
+                    "B) Null",
+                    "C) Garbage value",
+                    "D) The address of the next available block"
+                ],
+                "correct_answer": "C) Garbage value"
+            },
+            {
+                "question": "What is the specific format used by the `_DATE_` predefined macro to represent the current date in C programming?",
+                "options": [
+                    "A) \"YYYY-MM-DD\"",
+                    "B) \"DD/MM/YYYY\"",
+                    "C) \"MMM DD YYYY\"",
+                    "D) \"Month Day, Year\""
+                ],
+                "correct_answer": "C) \"MMM DD YYYY\""
+            },
+            {
+                "question": "Which unformatted character input function in C reads a single character from the keyboard and *also* echoes it to the current text window?",
+                "options": [
+                    "A) `getch()`",
+                    "B) `getchar()`",
+                    "C) `getc()`",
+                    "D) `getche()`"
+                ],
+                "correct_answer": "D) `getche()`"
+            },
+            {
+                "question": "What is the primary implication of how memory is allocated for members within a `union` in C?",
+                "options": [
+                    "A) Each member is allocated separate storage space.",
+                    "B) All members share a single memory location equal to the size of the largest member.",
+                    "C) Memory is dynamically allocated for each member upon access.",
+                    "D) Only the first declared member receives memory allocation."
+                ],
+                "correct_answer": "B) All members share a single memory location equal to the size of the largest member."
+            },
+            {
+                "question": "Which type of error in C programming is characterized by producing incorrect output without terminating the program during compilation or execution?",
+                "options": [
+                    "A) Syntactic Errors",
+                    "B) Runtime Errors",
+                    "C) Logical Errors",
+                    "D) Linker Errors"
+                ],
+                "correct_answer": "C) Logical Errors"
+            },
+            {
+                "question": "What specific action does the `strcat()` function perform regarding the null character of the *first* string when concatenating two strings?",
+                "options": [
+                    "A) It replaces the null character with a space.",
+                    "B) It removes the null character and places the second string from there.",
+                    "C) It keeps the null character and appends the second string after it.",
+                    "D) It moves the null character to the end of the combined string."
+                ],
+                "correct_answer": "B) It removes the null character and places the second string from there."
+            },
+            {
+                "question": "In C programming, what does the name of an array inherently represent or point to?",
+                "options": [
+                    "A) The total size of the array in bytes.",
+                    "B) The value of the last element of the array.",
+                    "C) The address of the first element of the array.",
+                    "D) A unique identifier for the array in memory."
+                ],
+                "correct_answer": "C) The address of the first element of the array."
+            }
+        ]
+    }
+}

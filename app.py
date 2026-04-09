@@ -12,7 +12,7 @@ from google.genai import types
 # ==========================================
 # 🔑 ដាក់ API KEY របស់អ្នកនៅទីនេះ (HARDCODED)
 # ==========================================
-MY_API_KEY = "AIzaSyDqUQavf5zluDEVN-M2-3iJwdIvsefp6cg"
+MY_API_KEY = st.secrets["GEMINI_API_KEY"]
 
 # --- 1. System Setup ---
 if not os.path.exists("quizzes"):

@@ -224,7 +224,7 @@ else:
                             with open(f"quizzes/{unique_id}.json", "w", encoding="utf-8") as f:
                                 json.dump(save_payload, f, ensure_ascii=False, indent=4)
                             
-                            base_url = "http://localhost:8501" 
+                            base_url = "https://quizappgenerator.streamlit.app" 
                             shareable_link = f"{base_url}/?quiz_id={unique_id}"
                             
                             st.success("✅ Assessment generated successfully!")
